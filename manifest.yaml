@@ -1,0 +1,38 @@
+guid: 112dc0a1-2a55-4e03-8907-7acb79f22d59
+name: changeTestCaseType
+caption: Change Test Case Type
+summary: Changes a Test Case to type 'Automated' when a specific custom property is set
+description: >-
+  Changes a Test Case to type 'Automated' when a specific custom property is set
+productSummary: Changes a Test Case to type 'Automated' when a specific custom property is set
+productDescription: >-
+  Changes a Test Case to type 'Automated' when a specific custom property is set
+author: Inflectra Corporation
+license: MIT License
+copyright: Copyright (C) Inflectra Corporation
+version: 1.0
+
+pageContents:
+  - pageId: 2
+    name: changeTestCaseType_testCaseDetails
+    code: file://testCaseDetails.js
+
+productSettings:
+  - settingTypeId: 3
+    name: testcase_custom_property
+    caption: Test Case Custom Property
+    position: 1
+    artifactTypeId: 2
+    tooltip: Select the test case property that will be used to trigger the change from Manual to Automated test case type
+  - settingTypeId: 1
+    name: testcase_custom_property_value
+    caption: Custom Property Value
+    position: 2
+    artifactTypeId: 2
+    tooltip: Enter the textual value that the above custom property needs to be set to, to trigger the test case type change
+  - settingTypeId: 1
+    name: testcase_type_value
+    caption: Test Case Type
+    position: 3
+    artifactTypeId: 2
+    tooltip: Enter the textual value of the test case type that you want the test case to be switched to
